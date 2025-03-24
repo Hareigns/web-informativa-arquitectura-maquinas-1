@@ -1,186 +1,35 @@
+import { useNavigate } from 'react-router-dom';
+
 import React from "react";
 import "../assets/styles/home.css";
-import logoLab_1 from "../assets/images/logoLab_1.webp"
+import logoPC from "../assets/images/pc-retro.webp"
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Cambia la ruta según la página a la que deseas navegar
+    navigate("/laboratorios");
+  };
   return (
-    <div class="container-main">
 
-      <div class="container-info">
-        <h1>Arquitectura de Máquinas I</h1>
-        <p>En este sitio web podras encontrar información sobre el curso de Arquitectura de Máquinas I, que se llevará a cabo durante el primer semestre del 2023 en la Universidad Nacional de Ingeniería.
-          <br />
-          <br />
-          En los diferentes Laboratorios, podrás encontrar materiales y recursos útiles para tu aprendizaje, desde el punto de vista de la simplicidad para tener un mejor conocimiento de los conceptos y técnicas que se abordan en el curso.
-        </p>
+    <div className="container hero-section">
+      <div className="row align-items-center">
+        <div className="col-md-6">
+          <h1 className="hero-title">
+            Puede investigar <br></br><span className="fw-bold">y repasar los laboratorios impartidos por el docente</span>
+          </h1>
+
+          <button className="btn btn-custom mt-3" onClick={handleClick}>Comenzar</button>
+        </div>
+
+        <div className="col-md-6">
+          <img src={logoPC} alt="Logo Arquitectura de Maquinas I" className="hero-logo" />
+        </div>
       </div>
-
-    <div class="container-home">
-      <div class="container-labs">
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #1</h6>
-            <h6>Fecha: 08-03-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="container-labs">
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="container-labs">
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-        <div class="lab-container">
-          <div className="logo-lab">
-            <img src={logoLab_1} alt="Logo" width="250px" height="100px"></img>
-          </div>
-          <div className="info-lab">
-            <h6>Laboratorio: #</h6>
-            <h6>Fecha: 00-00-25</h6>
-          </div>
-        </div>
-
-      </div>
-
-    </div >
-
     </div>
+
   );
 };
 
