@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.navbar {
+  background: linear-gradient(135deg, #f8c1ff, #d2eaff);
+    
+    font-family: 'Manrope', sans-serif;
+    
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:  black !important;
+    font-weight: bold;
+    
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;    
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  .navbar-brand img:hover {
+      transform: scale(1.1); /* Aumenta un 10% al pasar el cursor */
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+.nav-link:hover{
+  transform: scale(1.1); /* Aumenta un 10% al pasar el cursor */
+}
+
+  .nav-link {
+    color: black !important;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+
+  }
+  
+  .nav-link:hover {
+    color: #cdffff !important;
+    
+  }
