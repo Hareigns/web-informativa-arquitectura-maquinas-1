@@ -21,6 +21,7 @@ const Laboratorios = () => {
                                     <img
                                         src={iconLab}
                                         alt={`Laboratorio #${id}`}
+                                    
                                         className="img-fluid"
                                         style={{ cursor: "pointer" }}
                                     />
