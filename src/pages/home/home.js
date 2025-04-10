@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 
 import React from "react";
-import "../assets/styles/home.css";
-import logoPC from "../assets/images/pc-retro.webp"
+import "../../assets/styles/home.css";
+import logoPC from "../../assets/images/pc-retro.webp"
 
 const Home = () => {
 

@@ -1,7 +1,7 @@
 
 import React from "react";
-import "../assets/styles/about.css";
-import logoAbout from "../assets/images/about-icon.webp"
+import "../../assets/styles/about.css";
+import logoAbout from "../../assets/images/about-icon.webp"
 
 const About = () => {
   return (

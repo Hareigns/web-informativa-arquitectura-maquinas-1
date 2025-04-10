@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import imagenMicro from "../assets/images/logoLab_1.webp"; 
-import "../assets/styles/laboratorio1.css";
+// Ruta CORRECTA para la imagen
+import imagenMicro from '../../assets/images/logoLab_1.webp';
 
+// Ruta CORRECTA para el CSS
+import '../../assets/styles/laboratorio1.css';
 
 const Laboratorio1 = () => {
     return (
@@ -15,7 +17,7 @@ const Laboratorio1 = () => {
                 <img src={imagenMicro} alt="Microprocesador" className="lab-img" />
             </div>
 
-            <Link to="/microprocesadores">
+            <Link to="/lab1/microprocesadores">
                 <button className="btn btn-primary mt-3">Ver Información sobre Microprocesadores</button>
             </Link>
         </div>

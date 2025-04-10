@@ -14,7 +14,7 @@ const Laboratorios = () => {
                     Texto para adentrar a lo que sería la página
                 </p>
                 <div className="row justify-content-center">
-                    {[1, 2, 3, 4, 5, 6].map((id) => (
+                    {[1, 2, 3, 4, 5, 6, 7, 8].map((id) => (
                         <div key={id} className="col-md-4 col-sm-6 mb-4">
                             <div className="lab-item">
                                 <Link to={`/laboratorio/${id}`}>

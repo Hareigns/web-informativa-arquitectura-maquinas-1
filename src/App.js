@@ -1,14 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/home';
-import About from './pages/about';
+import Home from './pages/home/home';
+import About from './pages/about/about';
 import Laboratorios from './pages/laboratorios';
-import Laboratorio1 from './pages/Laboratorio1';
-import Microprocesadores from './pages/Microprocesadores';
-import Laboratorio2 from './pages/Laboratorio2';
-import Laboratorio3 from './pages/Laboratorio3';
-import Laboratorio4 from './pages/Laboratorio4';
-import Laboratorio5 from './pages/Laboratorio5';
-import Laboratorio6 from './pages/Laboratorio6';
+import Laboratorio1 from './pages/lab1/Laboratorio1';
+import Microprocesadores from './pages/lab1/Microprocesadores';
+import Laboratorio2 from './pages/lab2/Laboratorio2';
+import Laboratorio3 from './pages/lab3/Laboratorio3';
+import Laboratorio4 from './pages/lab4/Laboratorio4';
+import Laboratorio5 from './pages/lab5/Laboratorio5';
+import Laboratorio6 from './pages/lab6/Laboratorio6';
+import Laboratorio7 from './pages/lab7/Laboratorio7';
+import Laboratorio8 from './pages/lab8/Laboratorio8';
 import Header from './components/Navbar';
 
 function App() {
@@ -23,12 +25,14 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/laboratorios" element={<Laboratorios />} />
                     <Route path="/laboratorio/1" element={<Laboratorio1 />} />
-                    <Route path="/microprocesadores" element={<Microprocesadores />} />
+                    <Route path="/lab1/microprocesadores" element={<Microprocesadores />} />
                     <Route path="/laboratorio/2" element={<Laboratorio2 />} />
                     <Route path="/laboratorio/3" element={<Laboratorio3 />} />
                     <Route path="/laboratorio/4" element={<Laboratorio4 />} />
                     <Route path="/laboratorio/5" element={<Laboratorio5 />} />
                     <Route path="/laboratorio/6" element={<Laboratorio6 />} />
+                    <Route path="/laboratorio/7" element={<Laboratorio7 />} />
+                    <Route path="/laboratorio/8" element={<Laboratorio8 />} />
                 </Routes>
             </div>
         </Router>
