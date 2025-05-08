@@ -5,6 +5,7 @@ import Laboratorios from './pages/laboratorios';
 import Laboratorio1 from './pages/lab1/Laboratorio1';
 import Microprocesadores from './pages/lab1/Microprocesadores';
 import Laboratorio2 from './pages/lab2/Laboratorio2';
+import ProcesosOrdenadosDesordenados from './pages/lab2/ProcesosOrdenadosDesordenados'; // importa el nuevo componente
 import Laboratorio3 from './pages/lab3/Laboratorio3';
 import Laboratorio4 from './pages/lab4/Laboratorio4';
 import InfografiaEnsamblador from './pages/lab4/InfografiaEnsamblador'; // Nueva importación
@@ -28,7 +29,8 @@ function App() {
                     <Route path="/laboratorios" element={<Laboratorios />} />
                     <Route path="/laboratorio/1" element={<Laboratorio1 />} />
                     <Route path="/lab1/microprocesadores" element={<Microprocesadores />} />
-                    <Route path="/laboratorio/2" element={<Laboratorio2 />} />
+                    <Route path="/laboratorio/2" element={<Laboratorio2 />} /> 
+                    <Route path="/lab2/procesosordenadosdesordenados" element={<ProcesosOrdenadosDesordenados />} />
                     <Route path="/laboratorio/3" element={<Laboratorio3 />} />
                     <Route path="/lab3/funcionalidad-comparacion" element={<FuncionalidadComparacionProcesadores />} />
                     <Route path="/laboratorio/4" element={<Laboratorio4 />} />
