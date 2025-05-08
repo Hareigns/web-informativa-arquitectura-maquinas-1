@@ -8,6 +8,7 @@ import Laboratorio2 from './pages/lab2/Laboratorio2';
 import Laboratorio3 from './pages/lab3/Laboratorio3';
 import Laboratorio4 from './pages/lab4/Laboratorio4';
 import InfografiaEnsamblador from './pages/lab4/InfografiaEnsamblador'; // Nueva importación
+import FuncionalidadComparacionProcesadores from './pages/lab3/FuncionalidadComparacionProcesadores'; // Nueva importación
 import Laboratorio5 from './pages/lab5/Laboratorio5';
 import Laboratorio6 from './pages/lab6/Laboratorio6';
 import Laboratorio7 from './pages/lab7/Laboratorio7';
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/lab1/microprocesadores" element={<Microprocesadores />} />
                     <Route path="/laboratorio/2" element={<Laboratorio2 />} />
                     <Route path="/laboratorio/3" element={<Laboratorio3 />} />
+                    <Route path="/lab3/funcionalidad-comparacion" element={<FuncionalidadComparacionProcesadores />} />
                     <Route path="/laboratorio/4" element={<Laboratorio4 />} />
                     <Route path="/lab4/infografia-ensamblador" element={<InfografiaEnsamblador />} />
                     <Route path="/laboratorio/5" element={<Laboratorio5 />} />

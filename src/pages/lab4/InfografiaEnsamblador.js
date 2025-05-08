@@ -2,6 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const InfografiaEnsamblador = () => {
+    const ejercicios = [
+        { id: 1, titulo: "Hola Mundo en Ensamblador" },
+        { id: 2, titulo: "Suma de dos números" },
+        { id: 3, titulo: "Operaciones aritméticas" },
+        { id: 4, titulo: "Estructuras de control" },
+        { id: 5, titulo: "Manejo de cadenas" },
+        { id: 6, titulo: "Llamadas a funciones" }
+    ];
+
     return (
         <div className="max-w-5xl mx-auto p-8 space-y-10 bg-white rounded-3xl shadow-xl">
             <header className="text-center space-y-2">
@@ -78,20 +87,27 @@ const InfografiaEnsamblador = () => {
                 ))}
             </section>
 
-            <section className="text-center pt-4 border-t">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4">Ejercicios</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    {Array.from({ length: 6 }).map((_, i) => (
-                        <Link
-                            key={i}
-                            to={`/lab4/ejercicio${i + 1}`}
-                            className="flex items-center justify-center bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold py-3 px-5 rounded-xl shadow-lg hover:scale-105 transition-transform ring-1 ring-indigo-300"
-                        >
-                            Ejercicio {i + 1}
-                        </Link>
+            {/* Sección de ejercicios mejorada */}
+            <section className="pt-6 border-t border-gray-200">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Ejercicios Prácticos</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {ejercicios.map((ejercicio) => (
+                        <div key={ejercicio.id} className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                            <div className="p-5">
+                                <h3 className="text-lg font-semibold text-gray-800 mb-2">Ejercicio {ejercicio.id}</h3>
+                                <p className="text-gray-600 mb-4">{ejercicio.titulo}</p>
+                                <Link
+                                    to={`/lab4/ejercicio${ejercicio.id}`}
+                                    className="inline-block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                                >
+                                    Ver ejercicio
+                                </Link>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </section>
+
         </div>
     );
 };
