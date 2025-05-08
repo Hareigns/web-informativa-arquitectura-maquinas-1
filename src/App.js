@@ -7,6 +7,7 @@ import Microprocesadores from './pages/lab1/Microprocesadores';
 import Laboratorio2 from './pages/lab2/Laboratorio2';
 import Laboratorio3 from './pages/lab3/Laboratorio3';
 import Laboratorio4 from './pages/lab4/Laboratorio4';
+import InfografiaEnsamblador from './pages/lab4/InfografiaEnsamblador'; // Nueva importación
 import Laboratorio5 from './pages/lab5/Laboratorio5';
 import Laboratorio6 from './pages/lab6/Laboratorio6';
 import Laboratorio7 from './pages/lab7/Laboratorio7';
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/laboratorio/2" element={<Laboratorio2 />} />
                     <Route path="/laboratorio/3" element={<Laboratorio3 />} />
                     <Route path="/laboratorio/4" element={<Laboratorio4 />} />
+                    <Route path="/lab4/infografia-ensamblador" element={<InfografiaEnsamblador />} />
                     <Route path="/laboratorio/5" element={<Laboratorio5 />} />
                     <Route path="/laboratorio/6" element={<Laboratorio6 />} />
                     <Route path="/laboratorio/7" element={<Laboratorio7 />} />
