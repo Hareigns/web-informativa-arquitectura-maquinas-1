@@ -15,7 +15,7 @@ const About = () => {
         <div className="row-md-6">
 
           <h1 className="hero-title-about">
-            Somos un equipo de dos apasionados<br></br><span className="fw-bold">estudiantes de la Universidad Nacional de Ingeniería (UNI), actualmente cursando la asignatura de Arquitectura de Máquinas I. Este proyecto nace como parte de nuestro trabajo de fin de curso, con el objetivo principal de compartir y difundir el conocimiento que hemos adquirido a lo largo de las clases teóricas y prácticas.</span>
+            Somos un equipo de tres apasionados<br></br><span className="fw-bold">estudiantes de la Universidad Nacional de Ingeniería (UNI), actualmente cursando la asignatura de Arquitectura de Máquinas I. Este proyecto nace como parte de nuestro trabajo de fin de curso, con el objetivo principal de compartir y difundir el conocimiento que hemos adquirido a lo largo de las clases teóricas y prácticas.</span>
           </h1>
 
         </div>
