@@ -1,0 +1,237 @@
+/* Estilos para Procesos Ordenados/Desordenados */
+.eco-tech-process-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.eco-tech-process-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #a5d6a7 0%, #64b5f6 100%);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eco-tech-process-title {
+    margin: 0;
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.eco-tech-process-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Tarjetas de procesos */
+.eco-tech-process-card {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.eco-tech-process-card:hover {
+    transform: translateY(-5px);
+}
+
+.process-card-header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px 25px;
+}
+
+.process-card-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.process-card-body {
+    padding: 25px;
+}
+
+.process-icon {
+    font-size: 1.3rem;
+}
+
+/* Columnas de procesos */
+.process-columns {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .process-columns {
+        flex-direction: column;
+    }
+}
+
+.ordered-process .process-card-header {
+    background-color: #1565c0;
+}
+
+.unordered-process .process-card-header {
+    background-color: #7b1fa2;
+}
+
+/* Listas de características */
+.process-features {
+    padding-left: 20px;
+}
+
+.process-features li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.process-features li:before {
+    content: "•";
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -15px;
+}
+
+/* Eficiencia */
+.process-efficiency {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid #7cb342;
+}
+
+.efficiency-icon {
+    font-size: 1.5rem;
+}
+
+/* Diagrama */
+.process-diagram {
+    margin-top: 30px;
+}
+
+.diagram-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.diagram-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+.diagram-node {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ordered-node {
+    background: linear-gradient(135deg, #1565c0 0%, #64b5f6 100%);
+    border: 3px solid #bbdefb;
+}
+
+.unordered-node {
+    background: linear-gradient(135deg, #7b1fa2 0%, #ba68c8 100%);
+    border: 3px solid #e1bee7;
+}
+
+.diagram-line {
+    width: 2px;
+    height: 40px;
+    background-color: #a5d6a7;
+    margin: 10px 0;
+}
+
+.diagram-label {
+    font-weight: bold;
+    color: #2e7d32;
+    text-align: center;
+}
+
+.diagram-meeting {
+    display: flex;
+    justify-content: center;
+}
+
+.meeting-point {
+    background-color: #e8f5e9;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* Conclusión */
+.conclusion-card .process-card-body {
+    background-color: #e8f5e9;
+}
+
+.eco-tech-message {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-left: 4px solid #7cb342;
+}
+
+.message-icon {
+    font-size: 2rem;
+}
+
+/* Pie de página */
+.eco-tech-process-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 12px;
+}
+
+.footer-icons {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    letter-spacing: 15px;
+}
+
+/* Highlight */
+.highlight-green {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.highlight-blue {
+    color: #1565c0;
+    font-weight: bold;
+}

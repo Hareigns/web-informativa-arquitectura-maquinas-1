@@ -1,0 +1,366 @@
+/* Variables de color ecológico-tecnológico */
+:root {
+    --green-eco: #2e7d32;
+    --blue-tech: #1565c0;
+    --purple-tech: #7b1fa2;
+    --orange-tech: #f57c00;
+    --teal-eco: #00796b;
+    --yellow-tech: #fbc02d;
+    --light-bg: #f5f5f5;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Estilos base */
+.eco-tech-lab3-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.eco-tech-lab3-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #a5d6a7 0%, #64b5f6 100%);
+    border-radius: 12px;
+    color: white;
+    box-shadow: var(--card-shadow);
+}
+
+.eco-tech-lab3-title {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.eco-tech-lab3-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Secciones */
+.eco-tech-lab3-section {
+    margin-bottom: 50px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    color: var(--green-eco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-header .icon {
+    font-size: 1.5rem;
+}
+
+.section-description {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid de conceptos */
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.concept-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.concept-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.concept-icon {
+    font-size: 1.8rem;
+}
+
+.concept-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.concept-points {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.concept-points li {
+    margin-bottom: 8px;
+    position: relative;
+    list-style-type: none;
+}
+
+.point-icon {
+    position: absolute;
+    left: -20px;
+    color: var(--green-eco);
+    font-weight: bold;
+}
+
+.concept-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eco-tag {
+    background-color: #e8f5e9;
+    color: var(--green-eco);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Tabla comparativa */
+.comparison-table-container {
+    overflow-x: auto;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.eco-tech-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.eco-tech-comparison-table th,
+.eco-tech-comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.eco-tech-comparison-table th {
+    background-color: var(--green-eco);
+    color: white;
+    font-weight: 600;
+}
+
+.eco-tech-comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.eco-tech-comparison-table tr:hover {
+    background-color: #f1f8e9;
+}
+
+/* Línea de tiempo */
+.evolution-timeline {
+    margin: 50px auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.timeline-bar {
+    height: 4px;
+    background: linear-gradient(to right, #a5d6a7, #64b5f6);
+    border-radius: 2px;
+}
+
+.timeline-points {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.timeline-point {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.point-marker {
+    width: 16px;
+    height: 16px;
+    background-color: var(--blue-tech);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--blue-tech);
+}
+
+.point-label {
+    font-weight: bold;
+    color: var(--blue-tech);
+    margin-bottom: 5px;
+}
+
+.point-info {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 5px;
+    background-color: #e3f2fd;
+    border-radius: 4px;
+}
+
+/* Resumen */
+.eco-tech-lab3-summary {
+    margin: 50px 0;
+}
+
+.summary-card {
+    background: linear-gradient(135deg, #e8f5e9 0%, #bbdefb 100%);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
+
+.summary-card h3 {
+    color: var(--green-eco);
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.summary-card p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.eco-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blue-tech);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Pie de página */
+.eco-tech-lab3-footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: var(--green-eco);
+    color: white;
+    border-radius: 12px;
+}
+
+.eco-tech-lab3-footer p {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+}
+
+.footer-icons {
+    font-size: 2rem;
+    letter-spacing: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .eco-tech-lab3-title {
+        font-size: 2rem;
+    }
+    
+    .eco-tech-comparison-table th,
+    .eco-tech-comparison-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .eco-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .footer-icons {
+        letter-spacing: 8px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .eco-tech-comparison-table {
+        display: block;
+    }
+    
+    .eco-tech-comparison-table thead {
+        display: none;
+    }
+    
+    .eco-tech-comparison-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .eco-tech-comparison-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        text-align: right;
+    }
+    
+    .eco-tech-comparison-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 15px;
+        color: var(--green-eco);
+    }
+}
