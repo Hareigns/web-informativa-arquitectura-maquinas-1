@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 /* Variables de color ecológico-tecnológico */
 :root {
     --green-eco: #2e7d32;
@@ -16,7 +18,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
     color: #333;
     line-height: 1.6;
 }
@@ -52,6 +55,9 @@
 .section-header {
     text-align: center;
     margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .section-header h2 {
@@ -219,6 +225,11 @@
     margin: 0 auto 10px;
     border: 3px solid white;
     box-shadow: 0 0 0 2px var(--blue-tech);
+}
+.evolution-timeline{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .point-label {

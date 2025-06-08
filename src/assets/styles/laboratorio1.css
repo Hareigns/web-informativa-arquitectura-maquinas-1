@@ -14,3 +14,7 @@
 .img-container {
     margin: 20px 0;
 }
+h1 , p {
+    color: #000000;
+    font-weight: bold;
+}
