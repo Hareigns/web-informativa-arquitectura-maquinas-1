@@ -11,9 +11,16 @@ import Laboratorio4 from './pages/lab4/Laboratorio4';
 import InfografiaEnsamblador from './pages/lab4/InfografiaEnsamblador'; // Nueva importación
 import FuncionalidadComparacionProcesadores from './pages/lab3/FuncionalidadComparacionProcesadores'; // Nueva importación
 import Laboratorio5 from './pages/lab5/Laboratorio5';
+import EnsambladorFamiliax86 from './pages/lab5/EnsambladorFamiliax86';
+
 import Laboratorio6 from './pages/lab6/Laboratorio6';
+import ArqMicrocontroladores from './pages/lab6/ArqMicrocontroladores';
+
 import Laboratorio7 from './pages/lab7/Laboratorio7';
+import MemoriaMicrocontroladores from './pages/lab7/MemoriaMicrocontroladores';
+
 import Laboratorio8 from './pages/lab8/Laboratorio8';
+import ArquitecturaPCI from './pages/lab8/ArquitecturaPCI';
 import Header from './components/Navbar';
 
 function App() {
@@ -36,9 +43,15 @@ function App() {
                     <Route path="/laboratorio/4" element={<Laboratorio4 />} />
                     <Route path="/lab4/infografia-ensamblador" element={<InfografiaEnsamblador />} />
                     <Route path="/laboratorio/5" element={<Laboratorio5 />} />
+                    <Route path="/lab5/Ensamblador-Familiax86" element={<EnsambladorFamiliax86 />} />
                     <Route path="/laboratorio/6" element={<Laboratorio6 />} />
+                    <Route path="/lab6/Arq-Microcontroladores" element={<ArqMicrocontroladores />} />
+                    
                     <Route path="/laboratorio/7" element={<Laboratorio7 />} />
+                    <Route path="/lab7/Memoria-Microcontroladores" element={<MemoriaMicrocontroladores />} />
+
                     <Route path="/laboratorio/8" element={<Laboratorio8 />} />
+                    <Route path="/lab8/Arquitectura-PCI" element={<ArquitecturaPCI />} />
                 </Routes>
             </div>
         </Router>
