@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 /* Variables de color ecológico-tecnológico */
 :root {
     --green-eco: #2e7d32;
@@ -13,7 +15,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
     color: #333;
     line-height: 1.6;
    
@@ -30,6 +33,12 @@
     box-shadow: var(--card-shadow);
     position: relative;
     overflow: hidden;
+}
+
+.exercises-header {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .eco-tech-lab4-header::before {
