@@ -1,55 +1,352 @@
-.lab7-container {
-  max-width: 900px;
+/* Variables de color con tema eco-tecnológico */
+:root {
+  --indigo-dark: #4b0082;
+  --indigo-medium: #5e2d9c;
+  --indigo-light: #7b5cb3;
+  --teal-dark: #008f6c;
+  --teal-light: #1ca37e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Estilos base */
+.eco-tech-lab-container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Manrope', sans-serif;
+  background-color: #f9f8fd;
 }
 
-.lab7-container h1 {
+/* Encabezado */
+.eco-tech-lab-header {
   text-align: center;
   margin-bottom: 30px;
-  color: #2c3e50;
+  padding: 25px;
+  background: linear-gradient(135deg, var(--indigo-dark), var(--teal-dark));
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: var(--card-shadow);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" opacity="0.1"><rect x="20" y="20" width="60" height="60" rx="10" fill="none" stroke="white" stroke-width="2"/><rect x="30" y="30" width="40" height="40" rx="5" fill="none" stroke="white" stroke-width="1"/></svg>');
+  background-size: 100px;
 }
 
-section {
-  margin-bottom: 40px;
+.eco-tech-lab-title {
+  margin: 0;
+  font-size: 2.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-  color: #34495e;
+.eco-tech-lab-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.eco-tech-lab-badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Tarjetas */
+.eco-tech-lab-card {
+  background: var(--white);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  border-top: 3px solid var(--indigo-medium);
+}
+
+.eco-tech-lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--indigo-medium);
+  color: var(--white);
+  padding: 15px 25px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* Mapa conceptual */
+.concept-intro {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--gray-dark);
+}
+
+.concept-grid {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.concept-column {
+  flex: 1;
+}
+
+.concept-title {
+  color: var(--indigo-dark);
+  border-bottom: 2px solid var(--teal-light);
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.concept-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.concept-list li {
+  margin-bottom: 12px;
+  padding-left: 35px;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.concept-list .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background-color: var(--teal-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Tipos de memoria */
+.memory-types-container {
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.memory-type-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--indigo-light);
+}
+
+.memory-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-bottom: 15px;
 }
 
-h3 {
-  color: #2d3436;
+.memory-icon {
+  font-size: 1.8rem;
+  background-color: var(--indigo-light);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.memory-content p {
+  margin-top: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Comparativa de memorias */
+.memory-comparison {
+  overflow-x: auto;
   margin-top: 20px;
 }
 
-.mapa-conceptual ul {
-  list-style: square;
-  margin-left: 20px;
-  color: #555;
+.memory-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
 }
 
-.toggle-btn {
-  margin-top: 15px;
-  padding: 10px 18px;
-  background-color: #2e86de;
-  color: white;
-  border: none;
+.memory-comparison th, .memory-comparison td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.memory-comparison th {
+  background-color: var(--indigo-medium);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.memory-comparison tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.memory-comparison tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Detalles técnicos */
+.tech-details {
+  background-color: #f0f7ff;
+  padding: 15px;
   border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid var(--teal-light);
+}
+
+.tech-details h4 {
+  margin-top: 0;
+  color: var(--teal-dark);
+}
+
+.tech-details ul {
+  padding-left: 20px;
+}
+
+/* Botón toggle */
+.toggle-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.eco-tech-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--indigo-medium);
+  color: var(--white);
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.toggle-btn:hover {
-  background-color: #1b4f72;
+.eco-tech-btn:hover {
+  background-color: var(--indigo-dark);
+  transform: translateY(-3px);
 }
 
-.memorias-lista p {
-  margin-bottom: 12px;
-  color: #333;
+.toggle-icon {
+  font-weight: bold;
+}
+
+/* Consejos ecológicos */
+.eco-tip {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-left: 4px solid var(--teal-light);
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  color: var(--teal-dark);
+}
+
+/* Pie de página */
+.eco-tech-lab-footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  background: linear-gradient(135deg, var(--indigo-dark), var(--teal-dark));
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.footer-icons {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  letter-spacing: 15px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eco-tech-lab-title {
+    font-size: 2rem;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .concept-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-icons {
+    letter-spacing: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .memory-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-tech-lab-title {
+    font-size: 1.8rem;
+  }
+  
+  .eco-tech-lab-subtitle {
+    font-size: 1rem;
+  }
+  
+  .concept-list li {
+    padding-left: 30px;
+    font-size: 0.95rem;
+  }
+  
+  .concept-list .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+  
+  .memory-comparison th, .memory-comparison td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
 }
