@@ -1,60 +1,317 @@
-/* lab8.css */
-
-.lab8-container {
-  padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
-  max-width: 900px;
-  margin: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* Variables de color con tema eco-tecnológico */
+:root {
+  --purple-dark: #6a3093;
+  --purple-medium: #8e44ad;
+  --purple-light: #9b59b6;
+  --teal-dark: #008f6c;
+  --teal-light: #1ca37e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
-.lab8-container h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* Estilos base */
+.eco-tech-lab-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Manrope', sans-serif;
+  background-color: #faf9fe;
+}
+
+/* Encabezado */
+.eco-tech-lab-header {
   text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, var(--purple-dark), var(--teal-dark));
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: var(--card-shadow);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" opacity="0.1"><path d="M30,10 Q50,0 70,10 T90,30 Q100,50 90,70 T70,90 Q50,100 30,90 T10,70 Q0,50 10,30 T30,10" fill="none" stroke="white" stroke-width="2"/></svg>');
+  background-size: 100px;
 }
 
-.lab8-container section {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: #f3f6fa;
-  border-left: 4px solid #007acc;
-  border-radius: 8px;
+.eco-tech-lab-title {
+  margin: 0;
+  font-size: 2.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+.eco-tech-lab-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
 }
 
-button.toggle-btn {
-  padding: 10px 20px;
-  background-color: #007acc;
+.eco-tech-lab-badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Tarjetas */
+.eco-tech-lab-card {
+  background: var(--white);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  border-top: 3px solid var(--purple-medium);
+}
+
+.eco-tech-lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--purple-medium);
+  color: var(--white);
+  padding: 15px 25px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* Listas */
+.concept-list {
+  padding-left: 0;
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.concept-list li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 40px;
+  font-size: 1.1rem;
+}
+
+.concept-list .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--teal-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-bottom: 1rem;
 }
 
-button.toggle-btn:hover {
-  background-color: #005f99;
+.tech-list {
+  padding-left: 20px;
 }
 
-.ejercicios h2 {
-  margin-top: 1.5rem;
-  color: #005f99;
+.tech-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 25px;
 }
 
-.codigo {
-  background-color: #272822;
-  color: #f8f8f2;
-  padding: 1rem;
-  border-radius: 8px;
-  font-family: 'Courier New', Courier, monospace;
+.tech-list li:before {
+  content: "•";
+  color: var(--purple-medium);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Bloques de código */
+.code-block {
+  background-color: #f8f8f8;
+  border-left: 4px solid var(--purple-medium);
+  padding: 15px;
+  border-radius: 4px;
   overflow-x: auto;
+  margin: 20px 0;
+}
+
+.code-block pre {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gray-dark);
+}
+
+/* Mapa de memoria */
+.memory-map {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.memory-bank {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--purple-light);
+}
+
+.memory-bank h3 {
+  margin-top: 0;
+  color: var(--purple-dark);
+}
+
+.memory-bank ul {
+  padding-left: 20px;
+}
+
+/* Detalles técnicos */
+.tech-details {
+  background-color: #f0f7ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 4px solid var(--teal-light);
+}
+
+.tech-details h3 {
+  margin-top: 0;
+  color: var(--teal-dark);
+}
+
+.tech-details ul {
+  padding-left: 20px;
+}
+
+/* Botón toggle */
+.toggle-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.eco-tech-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--purple-medium);
+  color: var(--white);
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eco-tech-btn:hover {
+  background-color: var(--purple-dark);
+  transform: translateY(-3px);
+}
+
+.toggle-icon {
+  font-weight: bold;
+}
+
+/* Consejos ecológicos */
+.eco-tip {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-left: 4px solid var(--teal-light);
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  color: var(--teal-dark);
+}
+
+/* Pie de página */
+.eco-tech-lab-footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  background: linear-gradient(135deg, var(--purple-dark), var(--teal-dark));
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.footer-icons {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  letter-spacing: 15px;
+}
+
+/* Ejercicios */
+.exercises-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eco-tech-lab-title {
+    font-size: 2rem;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .concept-list li {
+    font-size: 1rem;
+    padding-left: 35px;
+  }
+  
+  .footer-icons {
+    letter-spacing: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .memory-map {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-tech-lab-title {
+    font-size: 1.8rem;
+  }
+  
+  .eco-tech-lab-subtitle {
+    font-size: 1rem;
+  }
+  
+  .concept-list li {
+    padding-left: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .concept-list .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
 }
