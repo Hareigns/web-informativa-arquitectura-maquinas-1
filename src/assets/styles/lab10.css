@@ -1,0 +1,343 @@
+/* Variables de color */
+:root {
+  --green-dark: #008f1f;
+  --green-medium: #1ca333;
+  --green-light: #249900;
+  --teal-dark: #008f6c;
+  --teal-light: #1ca37e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Estilos base */
+.eco-tech-lab-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Encabezado */
+.eco-tech-lab-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, var(--green-dark), var(--teal-dark));
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: var(--card-shadow);
+}
+
+.eco-tech-lab-title {
+  margin: 0;
+  font-size: 2.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.eco-tech-lab-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.eco-tech-lab-badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Tarjetas */
+.eco-tech-lab-card {
+  background: var(--white);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.eco-tech-lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--green-medium);
+  color: var(--white);
+  padding: 15px 25px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* Imágenes */
+.concept-image, .pwm-image {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.concept-image img, .pwm-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--teal-light);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Listas */
+.concept-list, .feature-list, .config-list {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.concept-list li, .feature-list li, .config-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.concept-list li:before, .feature-list li:before, .config-list li:before {
+  content: "•";
+  color: var(--teal-dark);
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+/* Modos CCP */
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.mode-card {
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.mode-card h3 {
+  margin-top: 0;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.capture-mode {
+  border-left-color: var(--green-dark);
+  background-color: #e8f5e9;
+}
+
+.capture-mode h3 {
+  background-color: var(--green-dark);
+}
+
+.compare-mode {
+  border-left-color: var(--teal-dark);
+  background-color: #e0f7fa;
+}
+
+.compare-mode h3 {
+  background-color: var(--teal-dark);
+}
+
+.pwm-mode {
+  border-left-color: var(--green-medium);
+  background-color: #f1f8e9;
+}
+
+.pwm-mode h3 {
+  background-color: var(--green-medium);
+}
+
+/* Tablas */
+.config-table {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.config-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.config-table th, .config-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.config-table th {
+  background-color: var(--teal-light);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.config-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Bloques de código */
+.code-block {
+  background-color: #f8f8f8;
+  border-left: 4px solid var(--teal-dark);
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gray-dark);
+}
+
+/* Fórmulas */
+.formula-box {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid var(--green-medium);
+}
+
+.formula-box h3 {
+  margin-top: 0;
+  color: var(--teal-dark);
+}
+
+/* Opciones de ejercicio */
+.option-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.option-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* Botón toggle */
+.toggle-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.eco-tech-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--green-medium);
+  color: var(--white);
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eco-tech-btn:hover {
+  background-color: var(--green-dark);
+  transform: translateY(-3px);
+}
+
+.toggle-icon {
+  font-weight: bold;
+}
+
+/* Consejos ecológicos */
+.eco-tip {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-left: 4px solid var(--teal-light);
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  color: var(--green-medium);
+}
+
+/* Pie de página */
+.eco-tech-lab-footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  background: linear-gradient(135deg, var(--teal-dark), var(--green-dark));
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.footer-icons {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  letter-spacing: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eco-tech-lab-title {
+    font-size: 2rem;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .config-table th, .config-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-icons {
+    letter-spacing: 8px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-tech-lab-title {
+    font-size: 1.8rem;
+  }
+  
+  .eco-tech-lab-subtitle {
+    font-size: 1rem;
+  }
+  
+  .code-block pre {
+    font-size: 0.8rem;
+  }
+  
+  .mode-grid, .option-cards {
+    grid-template-columns: 1fr;
+  }
+}
