@@ -1,56 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/* Variables de color con tema eco-tecnológico */
+:root {
+  --green-dark: #008f1f;
+  --green-medium: #1ca333;
+  --green-light: #249900;
+  --teal-dark: #008f6c;
+  --teal-light: #1ca37e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
 
-.home {
-    background: linear-gradient(135deg, #2fb925, #023f2d);
-    padding: 50px 0;
+/* Estilos base */
+.eco-tech-labs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Manrope', sans-serif;
+  background-color: #f9fff9;
+}
+
+/* Encabezado */
+.eco-tech-labs-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, var(--green-dark), var(--teal-dark));
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: var(--card-shadow);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" opacity="0.1"><rect x="10" y="10" width="80" height="80" rx="15" fill="none" stroke="white" stroke-width="2"/><circle cx="50" cy="50" r="30" fill="none" stroke="white" stroke-width="1"/></svg>');
+  background-size: 100px;
+}
+
+.eco-tech-labs-title {
+  margin: 0;
+  font-size: 2.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.eco-tech-labs-title strong {
+  font-weight: 700;
+}
+
+.eco-tech-labs-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.eco-tech-labs-badge {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Grid de laboratorios */
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.lab-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.eco-tech-lab-card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  border-top: 3px solid var(--green-medium);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eco-tech-lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.lab-icon-container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f7f0;
+  padding: 20px;
+}
+
+.lab-icon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+.eco-tech-lab-card:hover .lab-icon {
+  transform: scale(1.05);
+}
+
+.lab-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-title {
+  margin: 0 0 5px 0;
+  color: var(--green-dark);
+  font-size: 1.3rem;
+}
+
+.lab-subtitle {
+  margin: 0 0 10px 0;
+  color: var(--gray-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.lab-description {
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gray-dark);
+  flex-grow: 1;
+}
+
+.lab-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.lab-date {
+  color: var(--teal-dark);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lab-link {
+  color: var(--green-medium);
+  font-weight: 600;
+}
+
+/* Sección about */
+.eco-tech-labs-about {
+  margin-top: 50px;
+}
+
+.about-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: var(--card-shadow);
+  border-top: 3px solid var(--teal-light);
+}
+
+.about-card h3 {
+  margin-top: 0;
+  color: var(--teal-dark);
+}
+
+.about-card p {
+  line-height: 1.6;
+}
+
+.eco-tip {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-left: 4px solid var(--teal-light);
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  color: var(--teal-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eco-tech-labs-title {
+    font-size: 2rem;
   }
   
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #000000;
-    font-weight: bold;
+  .labs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-tech-labs-title {
+    font-size: 1.8rem;
   }
   
-  .subtitle {
-    font-size: 1.2rem;
-    color: #000000;
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
-  
-  .lab-item {
-    text-align: center;
-  }
-  
-  .lab-item img {
-    max-width: 80%;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .lab-item img:hover {
-    transform: scale(1.05);
-  }
-  
-  .lab-item p {
-    margin-top: 10px;
+  .eco-tech-labs-subtitle {
     font-size: 1rem;
-    color: #0e0e0e;
-    font-weight: bold;
   }
   
-  .row .col-md-6:nth-of-type(1) {
-    justify-content: left;
-    text-align: left;
-    width: 700px;
-    
-  }
-
-  .row .col-md-6:nth-of-type(3) {
-    justify-content: right;
-    text-align: right;
-    width: auto;
-    height: auto;
-    
+  .labs-grid {
+    grid-template-columns: 1fr;
   }
   
+  .lab-icon-container {
+    height: 150px;
+  }
+}

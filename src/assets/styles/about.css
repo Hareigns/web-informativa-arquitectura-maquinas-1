@@ -1,79 +1,298 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/* Variables de color con tema eco-tecnológico */
+:root {
+  --purple-dark: #6a3093;
+  --purple-medium: #8e44ad;
+  --purple-light: #9b59b6;
+  --teal-dark: #008f6c;
+  --teal-light: #1ca37e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
 
-body {
+/* Estilos base */
+.eco-tech-about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   font-family: 'Manrope', sans-serif;
-  background: linear-gradient(135deg, #2fb925, #023f2d);
+  background-color: #faf5ff;
 }
 
-span{
-    color: #2c2e67;
+/* Encabezado */
+.eco-tech-about-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, var(--purple-dark), var(--teal-dark));
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: var(--card-shadow);
 }
 
-.hero-section {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.hero-title-about {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #23235b;
+.about-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  backdrop-filter: blur(5px);
 }
 
-.hero-text {
-    font-size: 1.2rem;
-    color: #4b4b4b;
-    font-weight: bold;
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.btn-custom {
-    background-color: #2c2e67;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1rem;
-    border: none;
-    transition: transform 0.3s ease-in-out; /* Transición suave */
+.eco-tech-about-title {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.btn-custom:hover {
-    transform: scale(1.1); /* Aumenta un 10% al pasar el cursor */
+.eco-tech-about-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
 }
 
-.btn-custom:hover {
-    background-color: #cdffff;
+/* Tarjetas */
+.eco-tech-about-card {
+  background: var(--white);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  border-top: 3px solid var(--purple-medium);
 }
 
-.hero-logo {
-    max-width: auto;
-    height: auto;
-    transition: transform 0.3s ease-in-out; /* Transición suave */
-    padding: 30px;
+.eco-tech-about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.hero-logo:hover {
-    transform: scale(1.1); /* Aumenta un 10% al pasar el cursor */
+.card-header {
+  background-color: var(--purple-medium);
+  color: var(--white);
+  padding: 15px 25px;
 }
 
-.row .row-md-6:nth-of-type(1) {
-    justify-content: center;
-    text-align: center;
-    width: auto;
-    height: auto;
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
 
-    
-  }
+.card-body {
+  padding: 25px;
+}
 
-  .row .row-md-6:nth-of-type(2) {
-    
-    justify-content: center;
-    text-align: center;
-    
-    
+/* Contenido about */
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
 
+.university-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--teal-light);
+}
+
+.uni-logo {
+  width: 80px;
+  height: auto;
+}
+
+.university-info h3 {
+  margin: 0 0 5px 0;
+  color: var(--purple-dark);
+}
+
+.university-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+}
+
+/* Equipo */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.team-card {
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: var(--transition);
+  border-left: 4px solid var(--teal-light);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--purple-light);
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.team-card h3 {
+  margin: 10px 0 5px;
+  color: var(--purple-dark);
+}
+
+.member-role {
+  font-weight: bold;
+  color: var(--teal-dark);
+  margin: 0 0 10px;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: var(--transition);
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Filosofía */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.philosophy-item {
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.philosophy-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.philosophy-item h3 {
+  color: var(--purple-dark);
+  margin: 0 0 10px;
+}
+
+.philosophy-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Pie de página */
+.eco-tech-about-footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  background: linear-gradient(135deg, var(--purple-dark), var(--teal-dark));
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.footer-icons {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  letter-spacing: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eco-tech-about-title {
+    font-size: 2rem;
   }
   
+  .university-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-icons {
+    letter-spacing: 8px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-tech-about-title {
+    font-size: 1.8rem;
+  }
+  
+  .header-content {
+    gap: 15px;
+  }
+  
+  .about-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+}
