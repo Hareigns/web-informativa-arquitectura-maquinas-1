@@ -5,6 +5,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: linear-gradient(135deg, var(--green-dark), var(--teal-dark));
 }
 
 .eco-tech-process-header {

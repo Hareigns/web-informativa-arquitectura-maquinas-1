@@ -3,18 +3,18 @@ import "../assets/styles/laboratorios.css";
 import React from "react";
 
 // Importar todas las imágenes de los laboratorios
-import lab1Icon from "../assets/images/1.webp";
-import lab2Icon from "../assets/images/2.webp";
-import lab3Icon from "../assets/images/3.webp";
-import lab4Icon from "../assets/images/4.webp";
-import lab5Icon from "../assets/images/5.webp";
-import lab6Icon from "../assets/images/6.webp";
-import lab7Icon from "../assets/images/pc-retro.webp";
-import lab8Icon from "../assets/images/uni-icon.webp";
-import lab9Icon from "../assets/images/lab9 mapa.webp";
-import lab10Icon from "../assets/images/lab9 eje11 arduino.webp";
-import lab11Icon from "../assets/images/lab9 eje7.webp";
-import lab12Icon from "../assets/images/lab12 mapa.webp";
+import lab1Icon from "../assets/images/lab1.webp";
+import lab2Icon from "../assets/images/lab2.webp";
+import lab3Icon from "../assets/images/lab3.webp";
+import lab4Icon from "../assets/images/lab4.webp";
+import lab5Icon from "../assets/images/lab5.webp";
+import lab6Icon from "../assets/images/lab6.webp";
+import lab7Icon from "../assets/images/lab7.webp";
+import lab8Icon from "../assets/images/lab8.webp";
+import lab9Icon from "../assets/images/lab9.webp";
+import lab10Icon from "../assets/images/lab10.webp";
+import lab11Icon from "../assets/images/lab11.webp";
+import lab12Icon from "../assets/images/lab12.webp";
 
 const Laboratorios = () => {
     const labs = [

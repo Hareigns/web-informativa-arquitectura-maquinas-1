@@ -29,8 +29,8 @@ const Home = () => {
             </div>
             
             <h1 className="eco-hero-title">
-              Explora los <span>laboratorios</span> de <br />
-              <span className="highlight">Arquitectura de Máquinas I</span>
+              Explora los laboratorios de 
+              Arquitectura de Máquinas I
             </h1>
             
             <p className="eco-hero-subtitle">

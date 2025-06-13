@@ -16,11 +16,10 @@
 
 /* Estilos base */
 .eco-tech-about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  padding: 40px;
   font-family: 'Manrope', sans-serif;
-  background-color: #faf5ff;
+  background: linear-gradient(135deg, var(--green-dark), var(--teal-dark));
 }
 
 /* Encabezado */

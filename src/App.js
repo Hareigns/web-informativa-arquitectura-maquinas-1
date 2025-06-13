@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home';
 import About from './pages/about/about';
+import "../src/assets/styles/App.css";
+
 import Laboratorios from './pages/laboratorios';
 import Laboratorio1 from './pages/lab1/Laboratorio1';
 import Microprocesadores from './pages/lab1/Microprocesadores';
