@@ -1,25 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Asegúrate de tener una imagen adecuada para el laboratorio 8
-import imagenLab5 from '../../assets/images/logoLab_1.webp'; // Cambia por la imagen correcta
-
-// Usaremos el mismo CSS para mantener consistencia
-import '../../assets/styles/laboratorio1.css';
+import '../../assets/styles/laboratorio9.css';
 
 const Laboratorio9 = () => {
-  return (
-        <div className="container text-center">
-            <h1>Laboratorio 8</h1>
-            <p>Descripción detallada del Laboratorio 8.</p>
-            <p><strong>Fecha:</strong> 01/01/2025</p>
-
-            <div className="img-container">
-                <img src={imagenLab5} alt="Ensamblador" className="lab-img" />
+    return (
+        <div className="lab-container">
+            <h1 className="lab-title">Laboratorio 9</h1>
+            <h2 className="lab-subtitle">Control de Hardware</h2>
+            
+            <p className="lab-description">Interfaz con periféricos y dispositivos</p>
+            
+            {/* Tarjeta de conceptos clave */}
+            <div className="lab-key-concepts">
+                <h3>Técnicas clave:</h3>
+                <ul>
+                    <li>Acceso directo a memoria (DMA)</li>
+                    <li>Control de puertos E/S</li>
+                    <li>Manejo de interrupciones</li>
+                    <li>Comunicación SPI/I2C</li>
+                </ul>
             </div>
 
-            <Link to="/lab9/Control de Hardware">
-                <button className="btn btn-primary mt-3">Control de Hardware</button>
-            </Link>
+            {/* Cita técnica */}
+            <blockquote className="lab-quote">
+                "El verdadero poder de la programación de sistemas se revela cuando interactúas directamente con el hardware."
+                <footer>— Elecia White</footer>
+            </blockquote>
+
+            <div className="lab-meta">
+                <p className="lab-date"><strong>Fecha:</strong> 10/05/2025</p>
+                <Link to="/lab9/Control de Hardware" className="lab-link">
+                    <button className="lab-btn">Ver técnicas de control →</button>
+                </Link>
+            </div>
+
+            <div className="lab-img-container">
+                
+            </div>
         </div>
     );
 };

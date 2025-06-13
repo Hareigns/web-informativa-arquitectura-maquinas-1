@@ -89,7 +89,7 @@
 
 /* Efecto de scroll */
 .navbar.scrolled {
-  position: fixed;
+  
   top: 0;
   left: 0;
   right: 0;
@@ -105,5 +105,41 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Agrega esto al final de tu archivo navbar.css */
+
+.navbar {
+  position: sticky; /* Cambiado de fixed a sticky */
+  top: 0;
+  z-index: 1030; /* Bootstrap usa 1030 por defecto para navbars */
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #2b3035 !important; /* Color un poco más claro cuando hace scroll */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegura que el contenido principal tenga z-index menor */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mejora el menú desplegable para móviles */
+@media (max-width: 991.98px) {
+  .navbar {
+    position: sticky; /* Mantiene sticky en móviles también */
+  }
+  
+  .navbar-collapse {
+    position: absolute; /* Cambiado de fixed a absolute */
+    top: 100%; /* Aparece justo debajo del navbar */
+    background-color: #343a40;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 }

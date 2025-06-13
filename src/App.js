@@ -45,17 +45,23 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+
                     <Route path="/laboratorios" element={<Laboratorios />} />
                     <Route path="/laboratorio/1" element={<Laboratorio1 />} />
                     <Route path="/lab1/microprocesadores" element={<Microprocesadores />} />
+
                     <Route path="/laboratorio/2" element={<Laboratorio2 />} />
                     <Route path="/lab2/procesosordenadosdesordenados" element={<ProcesosOrdenadosDesordenados />} />
+
                     <Route path="/laboratorio/3" element={<Laboratorio3 />} />
                     <Route path="/lab3/funcionalidad-comparacion" element={<FuncionalidadComparacionProcesadores />} />
+
                     <Route path="/laboratorio/4" element={<Laboratorio4 />} />
                     <Route path="/lab4/infografia-ensamblador" element={<InfografiaEnsamblador />} />
+
                     <Route path="/laboratorio/5" element={<Laboratorio5 />} />
                     <Route path="/lab5/Ensamblador-Familiax86" element={<EnsambladorFamiliax86 />} />
+
                     <Route path="/laboratorio/6" element={<Laboratorio6 />} />
                     <Route path="/lab6/Arq-Microcontroladores" element={<ArqMicrocontroladores />} />
 
@@ -63,7 +69,7 @@ function App() {
                     <Route path="/lab7/Memoria-Microcontroladores" element={<MemoriaMicrocontroladores />} />
 
                     <Route path="/laboratorio/8" element={<Laboratorio8 />} />
-                    <Route path="/lab8/Arquitectura-PCI" element={<ArquitecturaPCI />} />
+                    <Route path="/lab8/ArquitecturaPCI" element={<ArquitecturaPCI />} />
 
                     <Route path="/laboratorio/9" element={<Laboratorio9 />} />
                     <Route path="/lab9/Control de Hardware" element={<Lab9 />} />

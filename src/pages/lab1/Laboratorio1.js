@@ -1,25 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Ruta CORRECTA para la imagen
-import imagenMicro from '../../assets/images/logoLab_1.webp';
-
-// Ruta CORRECTA para el CSS
 import '../../assets/styles/laboratorio1.css';
 
 const Laboratorio1 = () => {
     return (
-        <div className="container text-center">
-            <h1>Laboratorio 1</h1>
-            <p>Descripción detallada del Laboratorio 1.</p>
-            <p><strong>Fecha:</strong> 01/01/2025</p>
-
-            <div className="img-container">
-                <img src={imagenMicro} alt="Microprocesador" className="lab-img" />
+        <div className="lab-container">
+            <h1 className="lab-title">Laboratorio 1</h1>
+            <h2 className="lab-subtitle">Microprocesadores</h2>
+            
+            <p className="lab-description">Fundamentos de arquitectura de procesadores</p>
+            
+            {/* Tarjeta de conceptos clave */}
+            <div className="lab-key-concepts">
+                <h3>Conceptos clave:</h3>
+                <ul>
+                    <li>Arquitectura von Neumann</li>
+                    <li>Unidad de Control y ALU</li>
+                    <li>Registros del CPU</li>
+                    <li>Ciclo de instrucción</li>
+                </ul>
             </div>
 
-            <Link to="/lab1/microprocesadores">
-                <button className="btn btn-primary mt-3">Ver Información sobre Microprocesadores</button>
-            </Link>
+            {/* Cita técnica */}
+            <blockquote className="lab-quote">
+                "El rendimiento de un microprocesador se mide por su capacidad para ejecutar instrucciones por ciclo (IPC)."
+                <footer>— Patterson & Hennessy</footer>
+            </blockquote>
+
+            <div className="lab-meta">
+                <p className="lab-date"><strong>Fecha:</strong> 16/09/2025</p>
+                <Link to="/lab1/microprocesadores" className="lab-link">
+                    <button className="lab-btn">Ver contenido →</button>
+                </Link>
+            </div>
+
+            <div className="lab-img-container">
+               
+            </div>
         </div>
     );
 };

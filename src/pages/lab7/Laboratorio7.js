@@ -1,28 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Asegúrate de tener una imagen adecuada para el laboratorio 7
-import imagenLab5 from '../../assets/images/logoLab_1.webp'; // Cambia por la imagen correcta
-
-// Usaremos el mismo CSS para mantener consistencia
-import '../../assets/styles/laboratorio1.css';
+import '../../assets/styles/laboratorio7.css';
 
 const Laboratorio7 = () => {
-  return (
-        <div className="container text-center">
-            <h1>Laboratorio 7</h1>
-            <p>Descripción detallada del Laboratorio 7.</p>
-            <p><strong>Fecha:</strong> 01/01/2025</p>
-
-            <div className="img-container">
-                <img src={imagenLab5} alt="Ensamblador" className="lab-img" />
+    return (
+        <div className="lab-container">
+            <h1 className="lab-title">Laboratorio 7</h1>
+            <h2 className="lab-subtitle">Memoria en Microcontroladores</h2>
+            
+            <p className="lab-description">Organización de memoria en sistemas embebidos</p>
+            
+            {/* Tarjeta de conceptos clave */}
+            <div className="lab-key-concepts">
+                <h3>Estructuras de memoria:</h3>
+                <ul>
+                    <li>Memoria Flash (programa)</li>
+                    <li>SRAM (datos volátiles)</li>
+                    <li>EEPROM (datos persistentes)</li>
+                    <li>Mapa de memoria y segmentación</li>
+                </ul>
             </div>
 
-            <Link to="/lab7/Memoria-Microcontroladores">
-                <button className="btn btn-primary mt-3">Ver informacion sobre memoria de Microcontroladores</button>
-            </Link>
+            {/* Cita técnica */}
+            <blockquote className="lab-quote">
+                "En sistemas embebidos, cada byte de memoria cuenta. La eficiencia es la clave."
+                <footer>— Michael Barr</footer>
+            </blockquote>
+
+            <div className="lab-meta">
+                <p className="lab-date"><strong>Fecha:</strong> 26/04/2025</p>
+                <Link to="/lab7/Memoria-Microcontroladores" className="lab-link">
+                    <button className="lab-btn">Ver organización de memoria →</button>
+                </Link>
+            </div>
+
+            <div className="lab-img-container">
+                
+            </div>
         </div>
     );
 };
 
 export default Laboratorio7;
-

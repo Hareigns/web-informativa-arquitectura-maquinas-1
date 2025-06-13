@@ -1,25 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Ruta CORRECTA para la imagen
-import imagenMicro from '../../assets/images/logoLab_1.webp';
-
-// Ruta CORRECTA para el CSS
-import '../../assets/styles/laboratorio1.css';
+import '../../assets/styles/laboratorio2.css';
 
 const Laboratorio2 = () => {
     return (
-        <div className="container text-center">
-            <h1>Laboratorio 2</h1>
-            <p>Descripción detallada del Laboratorio 2.</p>
-            <p><strong>Fecha:</strong> 01/01/2025</p>
-
-            <div className="img-container">
-                <img src={imagenMicro} alt="Microprocesador" className="lab-img" />
+        <div className="lab-container">
+            <h1 className="lab-title">Laboratorio 2</h1>
+            <h2 className="lab-subtitle">Procesos Ordenados/Desordenados</h2>
+            
+            <p className="lab-description">Análisis de flujo de instrucciones</p>
+            
+            {/* Tarjeta de conceptos clave */}
+            <div className="lab-key-concepts">
+                <h3>Conceptos clave:</h3>
+                <ul>
+                    <li>Pipeline de instrucciones</li>
+                    <li>Riesgos de datos y control</li>
+                    <li>Ejecución en orden vs fuera de orden</li>
+                    <li>Branch prediction</li>
+                </ul>
             </div>
 
-            <Link to="/lab2/ProcesosOrdenadosDesordenados">
-                <button className="btn btn-primary mt-3">Ver Información sobre Procesos ordenados</button>
-            </Link>
+            {/* Cita técnica */}
+            <blockquote className="lab-quote">
+                "La ejecución fuera de orden mejora el IPC pero incrementa la complejidad del hardware."
+                <footer>— David A. Patterson</footer>
+            </blockquote>
+
+            <div className="lab-meta">
+                <p className="lab-date"><strong>Fecha:</strong> 22/05/2025</p>
+                <Link to="/lab2/ProcesosOrdenadosDesordenados" className="lab-link">
+                    <button className="lab-btn">Ver contenido →</button>
+                </Link>
+            </div>
+
+            <div className="lab-img-container">
+                
+            </div>
         </div>
     );
 };
