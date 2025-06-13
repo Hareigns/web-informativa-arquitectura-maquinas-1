@@ -62,9 +62,10 @@
 }
 
 /* Grid de laboratorios */
+/* Grid de laboratorios - 3 columnas por fila */
 .labs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
   gap: 25px;
   margin: 30px 0;
 }
@@ -226,6 +227,56 @@
   
   .labs-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .lab-icon-container {
+    height: 150px;
+  }
+}
+
+/* Grid de laboratorios */
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.lab-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.eco-tech-lab-card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  border-top: 3px solid var(--green-medium);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .labs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .labs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .eco-tech-labs-title {
+    font-size: 1.8rem;
+  }
+  
+  .eco-tech-labs-subtitle {
+    font-size: 1rem;
   }
   
   .lab-icon-container {
